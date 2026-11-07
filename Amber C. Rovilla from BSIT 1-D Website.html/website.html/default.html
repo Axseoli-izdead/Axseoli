@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* General Reset & Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('C:/Users/axseo/OneDrive/Documents/Application/New Folder/Amber C. Rovilla from BSIT 1-D Website.html/website.html/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+
+        .top-header {
+            text-align: center;
+            padding: 30px 20px 20px;
+            background: rgba(10, 15, 30, 0.7);
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid #87cefa;
+            color: lightblue;
+        }
+
+        .top-header h1 {
+            margin: 0 0 5px 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 10px rgba(135, 206, 250, 0.5);
+        }
+
+        .top-header p {
+            margin: 0;
+            font-size: 16px;
+            color: #87cefa;
+            font-weight: bold;
+        }
+
+
+        .page-layout {
+            display: flex;
+            flex-direction: row;
+            min-height: calc(100vh - 110px);
+        }
+
+
+        .sidebar {
+            width: 24%;
+            min-width: 220px;
+            background-color: rgba(15, 23, 42, 0.85);
+            padding: 40px 20px;
+            box-sizing: border-box;
+            border-right: 1px solid rgba(135, 206, 250, 0.2);
+        }
+
+
+        .sidebar a {
+            display: block;
+            background-color: navyblue;
+            color: lightblue;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .sidebar a:hover {
+            background-color: royalblue;
+            color: #87cefa;
+            transform: translateY(-2px);
+        }
+
+
+        main.content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Content Title Section now sits above the layout elements -->
+<header class="top-header">
+    <h1>My Personal Website</h1>
+    <p>Amber C. Rovilla</p>
+</header>
+
+<div class="page-layout">
+
+    <aside class="sidebar">
+        <a href="home.html" target="myframe">Home</a>
+        <a href="About myself.html" target="myframe">About myself</a>
+        <a href="gallery.html" target="myframe">Gallery</a>
+        <a href="Contact.html" target="myframe">Contact</a>
+    </aside>
+
+    <main class="content">
+        <iframe name="myframe" src="home.html" width="1000" height="540"></iframe>
+    </main>
+
+</div>
+
+</body>
+</html>
