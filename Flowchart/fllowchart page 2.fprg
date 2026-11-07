@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="axseo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-21 11:33:06 PM"/>
+        <attribute name="created" value="YXhzZW87QVhTRU9MSTsyMDI2LTEwLTE5OzEwOjEwOjQyIEFNOzIzMzU="/>
+        <attribute name="edited" value="YXhzZW87QVhTRU9MSTsyMDI2LTEwLTIxOzExOjMzOjA2IFBNOzg7MjQ2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sl" type="String" array="False" size=""/>
+            <declare name="sc1, mp1, str1, dex1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hello! Welcome to Catworld&quot;" newline="True"/>
+            <output expression="&quot;Please select a mode&#13;&#10;--Multiplayer-- --Single player-- --Casual-- --Tutorial--&quot;" newline="True"/>
+            <input variable="sl"/>
+            <output expression="sl &amp; &quot; mode&quot;" newline="True"/>
+            <output expression="&quot;Long ago, the world of Catworld was a peaceful land where magic flowed through every kingdom. Ancient empires flourished, powerful warriors protected the innocent, and sacred temples maintained the balance between light and darkness.&#10;&#10;But peace never lasts forever.&#10;&#10;Deep within the forgotten lands, a mysterious darkness has begun to spread. Forests are dying, ancient magic is becoming unstable, and strange whispers echo through the night. The fate of Catworld now rests in the hands of three extraordinary heroes.&#10;&#10;Victor, the brilliant Archduke of Alaria. Xavier, the fearless captain of the Royal Guard. And Jasmine, the High Priestess of the Sun-Kissed Empire.&#10;&#10;Each hero has a different path, a different purpose, and a mission that could change the fate of the world.&#10;&#10;Your adventure begins now. Welcome to Catworld!&quot;" newline="True"/>
+            <output expression="&quot;--Please seletct your character--&quot;" newline="True"/>
+            <output expression="&quot;--1#Turkish angora (Jasmine the Claric)--&#13;&#10;--2#Oriental longhair (Xavier the Fighter)--&#13;&#10;--3#Persian (Victor the Wiard)--&#13;&#10;&quot;" newline="True"/>
+            <input variable="sc1"/>
+            <if expression="sc1 == 1">
+                <then>
+                    <output expression="&quot;--Jasmine--&#13;&#10;--The Sun-kissed Empire, the Holy Sanctuary of the White Marble Temple--&#13;&#10;--Background: High Priestess and the princess of the Sun-Kissed Empire--&#13;&#10;--Skills: Divine Healing, radiant barriers, purging curses, and mace combat--&quot;" newline="True"/>
+                    <output expression="&quot;--PLease enter your character's stats--&quot;" newline="True"/>
+                    <output expression="&quot;--Magical power 1-100--&quot;" newline="True"/>
+                    <input variable="mp1"/>
+                    <output expression="&quot;--Strength 1-100 --&quot;" newline="True"/>
+                    <input variable="str1"/>
+                    <output expression="&quot;--Dexterity 1-100 --&quot;" newline="True"/>
+                    <input variable="dex1"/>
+                    <output expression="&quot;--Magical power: &quot; &amp; mp1 &amp;&quot;-- --Strength: &quot; &amp; str1 &amp; &quot;-- -- dexterity: &quot; &amp; dex1 &amp; &quot;--&quot;" newline="True"/>
+                    <output expression="&quot;System: Excellent! Your journey is about to begin. Prepare yourself, hero.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sc1 == 2">
+                        <then>
+                            <output expression="&quot;--Xavier--&#13;&#10;--The Jade Bamboo Empire--&#13;&#10;--Background- Captain of the Royal Guard--&#13;&#10;--Skills: Master swordsmanship, tactical strategy, parrying, apid strickes, and weapon adaptability--&quot;" newline="True"/>
+                            <output expression="&quot;--PLease enter your character's stats--&quot;" newline="True"/>
+                            <output expression="&quot;--Magical power 1-100--&quot;" newline="True"/>
+                            <input variable="mp1"/>
+                            <output expression="&quot;--Strength 1-100 --&quot;" newline="True"/>
+                            <input variable="str1"/>
+                            <output expression="&quot;--Dexterity 1-100 --&quot;" newline="True"/>
+                            <input variable="dex1"/>
+                            <output expression="&quot;--Magical power: &quot; &amp; mp1 &amp;&quot;-- --Strength: &quot; &amp; str1 &amp; &quot;-- -- dexterity: &quot; &amp; dex1 &amp; &quot;--&quot;" newline="True"/>
+                            <output expression="&quot;System: Excellent! Your journey is about to begin. Prepare yourself, hero.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;--Victor--&#13;&#10;--The Great City of Alcaria, the Grand Archives of Ivory Gate--&#13;&#10;--Background- Archduke and Archmage--&#13;&#10;--Skills: Arcane lore, teleportation circles, illusion magic, elemental manipulation, and ancient languages--&quot;" newline="True"/>
+                            <output expression="&quot;--PLease enter your character's stats--&quot;" newline="True"/>
+                            <output expression="&quot;--Magical power 1-100--&quot;" newline="True"/>
+                            <input variable="mp1"/>
+                            <output expression="&quot;--Strength 1-100 --&quot;" newline="True"/>
+                            <input variable="str1"/>
+                            <output expression="&quot;--Dexterity 1-100 --&quot;" newline="True"/>
+                            <input variable="dex1"/>
+                            <output expression="&quot;--Magical power: &quot; &amp; mp1 &amp;&quot;-- --Strength: &quot; &amp; str1 &amp; &quot;-- -- dexterity: &quot; &amp; dex1 &amp; &quot;--&quot;" newline="True"/>
+                            <output expression="&quot;System: Excellent! Your journey is about to begin. Prepare yourself, hero.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

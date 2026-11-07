@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="axseo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-19 03:33:56 PM"/>
+        <attribute name="created" value="YXhzZW87QVhTRU9MSTsyMDI2LTEwLTE3OzEwOjA1OjUxIEFNOzIzMzc="/>
+        <attribute name="edited" value="YXhzZW87QVhTRU9MSTsyMDI2LTEwLTE5OzAzOjMzOjU2IFBNOzM7MjQ3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age, i" type="Integer" array="False" size=""/>
+            <declare name="username, c, ans" type="String" array="False" size=""/>
+            <declare name="isvalid" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Enter username: &quot;" newline="True"/>
+            <input variable="username"/>
+            <assign variable="isvalid" expression="true"/>
+            <for variable="i" start="0" end="len(username)-1" direction="inc" step="1">
+                <assign variable="c" expression="Char(username,i)"/>
+                <if expression="(ToCode(c)&gt;=65 and ToCode(c)&lt;=90) or&#13;&#10;(ToCode(c)&gt;=97 and ToCode(c)&lt;=122)">
+                    <then/>
+                    <else>
+                        <assign variable="isvalid" expression="false"/>
+                    </else>
+                </if>
+            </for>
+            <while expression="isvalid == false">
+                <output expression="&quot;Invalid username! &quot;" newline="True"/>
+                <output expression="&quot;Please enter username without number and symbols&quot;" newline="True"/>
+                <input variable="username"/>
+                <assign variable="isvalid" expression="true"/>
+            </while>
+            <output expression="&quot;Enter age: &quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age &gt;=10">
+                <then>
+                    <output expression="&quot;Welcome to Catworld! &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sorry you are underage, you must be 10 or older to play this game.&quot;" newline="True"/>
+                    <output expression="&quot;Exit: Yes or No ____&quot;" newline="True"/>
+                    <input variable="ans"/>
+                    <output expression="&quot;Answer: &quot; &amp; ans" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
