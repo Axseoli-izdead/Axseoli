@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* General Reset & Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* FIXED: Added url() wrapper and switched to a clean relative path */
+            background: url('C:/Users/axseo/OneDrive/Documents/application/New Folder/Cassandra A. Morales/activity.html/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .top-header {
+            text-align: center;
+            padding: 30px 20px 20px;
+            background: rgba(248, 205, 219, 0.7);
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid #7a2a4d;
+            color: #7a2a4d;
+        }
+
+        .top-header h1 {
+            margin: 0 0 5px 0;
+            font-size: 32px;
+            letter-spacing: 3px;
+            text-shadow: 0 2px 10px rgba(248, 205, 219, 0.7);
+        }
+
+        .top-header p {
+            margin: 0;
+            font-size: 16px;
+            color: #7a2a4d;
+            font-weight: bold;
+        }
+
+        .page-layout {
+            display: flex;
+            flex-direction: row;
+            min-height: calc(100vh - 110px);
+        }
+
+        .sidebar {
+            width: 24%;
+            min-width: 220px;
+            background-color: rgba(248, 205, 219, 0.7);
+            padding: 40px 20px;
+            box-sizing: border-box;
+            border-right: 1px solid rgba(135, 206, 250, 0.2);
+        }
+
+        .sidebar a {
+            display: block;
+            background-color: #fbe3ec;
+            color: #7a2a4d;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar a:hover {
+            background-color: #fbe3ec;
+            color: #7a2a4d;
+            transform: translateY(-2px);
+        }
+
+        main.content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Content Title Section now sits above the layout elements -->
+<header class="top-header">
+    <h1>My Personal Website</h1>
+    <p>Cassandra A. Morales</p>
+</header>
+
+<div class="page-layout">
+    <aside class="sidebar">
+        <a href="Home.html" target="myframe">Home</a>
+        <a href="About myself.html" target="myframe">About myself</a>
+        <a href="Gallery.html" target="myframe">Gallery</a>
+        <a href="Contact.html" target="myframe">Contact</a>
+    </aside>
+
+    <main class="content">
+        <iframe name="myframe" src="Home.html" width="1000" height="560"></iframe>
+    </main>
+</div>
+
+</body>
+</html>
